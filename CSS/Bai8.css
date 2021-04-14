@@ -1,0 +1,18 @@
+h3 {
+    text-align: center;
+}
+
+#ol-parent  > li {
+    list-style-type: upper-roman;
+}
+
+span {
+    font-weight: bold;
+}
+
+hr {
+    width: 30%;
+    border-width: 0;
+    height: 2px;
+    background-color: black;
+}

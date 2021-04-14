@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 14</title>
+    <style>
+        img {
+            width: 210px;
+            height: 83px;
+        }
+
+        input[type='submit'],input[type='button'] {
+            width: 200px;
+            box-shadow: 1px 1px 2px black;
+        }
+
+        input[type='submit']:hover,
+        input[type='button']:hover {
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <form>
+        <label for="your-age">Your age:</label>
+        <input type="text" name="your-age" id="your-age">
+        <br>
+        <label for="gender">Your gender</label>
+        <input type="radio" name="gender" id="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female">
+        <label for="female">Female</label>
+        <br>
+        <span>Check all names of the people listed whom you have heard about:</span>
+        <br>
+        <input type="checkbox" name="name-1" id="name-1">
+        <label for="name-1">Marc Andreessen</label>
+        <input type="checkbox" name="name-2" id="name-2">
+        <label for="name-2">Lisa Schmeiser</label>
+        <input type="checkbox" name="name-3" id="name-3">
+        <label for="name-3">Al Gore</label>
+        <input type="checkbox" name="name-4" id="name-4">
+        <label for="name-4">Boutros-Ghali</label>
+        <br>
+        <span>What is your favorite Web browser?</span>
+        <select name="web-browser" id="web-browser">
+            <option value="safari">Safari</option>
+            <option value="chrome">Chrome</option>
+            <option value="firefox">Firefox</option>
+            <option value="cococ">CocCoc</option>
+        </select>
+        <br>
+        <span>Which of these ice cream flavors have you tried?</span>
+        <select name="ice-cream" id="ice-cream" size="3">
+            <option value="vanilla">Vanilla</option>
+            <option value="chocolate">Chocolate</option>
+            <option value="cherry-garcia">Cherry Garcia</option>
+        </select>
+        <br>
+        <span>Guess the secret password:</span>
+        <input type="password" name="user-pass" id="user-pass">
+        <br>
+        <span>Do you have an informal nickname:</span>
+        <input type="radio" name="nickname" id="no-nickname">
+        <label for="no-nickname">No</label>
+        <input type="radio" name="nickname" id="yes-nickname">
+        <label for="yes-nickname">Yes,it is:</label>
+        <input type="text" name="nickname" id="nickname">
+        <br>
+        <span>Enter your personal motto:</span>
+        <br>
+        <textarea name="personal-motto" id="personal-motto" cols="40" rows="1">All is well that ends well.</textarea>
+        <br>
+        <span>
+            When you are done with the above responses, please submit
+            this information by clicking on your current geographic location on this map:
+        </span>
+        <br>
+        <img src="/img/map.png" alt="map">
+        <br>
+        <input type="submit" value="Send this survey">
+        <input type="button" value="Cancel this survey">
+</body>
+</html>
